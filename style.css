@@ -409,7 +409,6 @@ nav {
   margin-top: 3rem;
 }
 
-
 .no-reviews-container {
   display: flex;
   justify-content: center;
@@ -444,7 +443,6 @@ nav {
   /* margin-bottom: 1.5rem; */
   font-style: italic;
   line-height: 1.7;
-
 }
 
 .reviewer {
@@ -567,15 +565,16 @@ nav {
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
   margin-top: 3rem;
+  justify-content: center;
 }
 
 .team-flex {
   display: flex;
   justify-content: center;
-  gap: 2rem
+  gap: 2rem;
 }
 
 .team-card {
@@ -585,7 +584,7 @@ nav {
   text-align: center;
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
-  max-width: 250px;
+  max-width: 500px;
 }
 
 .team-card:hover {
@@ -757,17 +756,27 @@ footer {
   color: #cbd5e1;
 }
 
-.footer-link{
+.footer-link {
   color: #cbd5e1;
   text-decoration: underline;
   text-underline-offset: 2px;
 }
 
-.policy-bullet{
+.policy-bullet {
   padding-left: 20px;
 }
 
-/* Mobile Responsive */
+@media (max-width: 1015px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -800,10 +809,13 @@ footer {
   .companies-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+  
+  .team-card{
+    max-width: none;
+  }
 
-  .team-flex {
-    flex-direction: column;
-    align-items: center;
+  .team-grid {
+    grid-template-columns: 1fr;
   }
 }
 

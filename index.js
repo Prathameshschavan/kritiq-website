@@ -30,32 +30,7 @@ document.querySelectorAll(".fade-in").forEach((el) => {
   observer.observe(el);
 });
 
-// Contact form submission
-document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault();
 
-  // Get form data
-  const formData = new FormData(this);
-  const name = formData.get("name");
-  const email = formData.get("email");
-  const service = formData.get("service");
-
-  // Simple validation
-  if (!name || !email) {
-    alert("Please fill in all required fields.");
-    return;
-  }
-
-  // Show success message
-  alert(
-    `Thank you ${name}! Your inquiry has been received. We will contact you within 24 hours to discuss your ${
-      service || "project"
-    } requirements.`
-  );
-
-  // Reset form
-  this.reset();
-});
 
 // Header scroll effect
 window.addEventListener("scroll", function () {

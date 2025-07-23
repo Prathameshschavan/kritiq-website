@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Technologies - KritIQ IT Solutions</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/png" href="../assets/images/logo-white.png" />
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <a href="/index.html" style="text-decoration: none">
+          <div class="logo">
+            <img
+              src="../assets/images/logo-black.png"
+              width="40px"
+              alt="KritIQ logo"
+            />
+            <div class="logo-text">KritIQ</div>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="/index.html#home">Home</a></li>
+          <li><a href="/index.html#services">Services</a></li>
+          <li><a href="/index.html#products">Products</a></li>
+          <li><a href="/index.html#technologies">Technologies</a></li>
+          <li><a href="/index.html#about">About</a></li>
+          <li><a href="/index.html#team">Team</a></li>
+          <li><a href="/index.html#contact" class="cta-nav">Get Quote</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="technologie-details">
+      <div class="container">
+        <h2 class="section-title fade-in">Backend Technologies</h2>
+        <p class="section-subtitle fade-in">
+          Discover the robust backend technologies we use to power scalable and
+          secure applications.
+        </p>
+        <div id="backend-tech-grid" class="tech-card-grid fade-in"></div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <a href="/index.html">
+              <div class="logo" style="margin-bottom: 1.5rem">
+                <img
+                  src="../assets/images/logo-white.png"
+                  width="40px"
+                  alt="KritIQ logo"
+                />
+
+                <div class="logo-text" style="color: white">KritIQ</div>
+              </div>
+            </a>
+            <p>
+              We are a dynamic software development company specializing in
+              custom applications, enterprise solutions, and digital
+              transformation services designed to drive your business forward.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul>
+              <li>
+                <a href="/index.html#services">Custom Software Development</a>
+              </li>
+              <li><a href="/index.html#services">Web Applications</a></li>
+              <li>
+                <a href="/index.html#services">Mobile App Development</a>
+              </li>
+              <li><a href="/index.html#services">Cloud Solutions</a></li>
+              <li><a href="/index.html#services">Graphic Designing</a></li>
+              <li><a href="/index.html#services">Digital Marketing</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Products</h4>
+            <ul>
+              <li><a href="/index.html#products">Lekhas</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Company</h4>
+            <ul>
+              <li><a href="/index.html#about">About Us</a></li>
+              <li><a href="/index.html#team">Our Team</a></li>
+              <li><a href="/index.html#contact">Careers</a></li>
+              <li><a href="/index.html#contact">Contact</a></li>
+              <li><a href="/index.html#contact">Support</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 KritIQ IT Solutions PVT LTD. All rights reserved. |
+            <a class="footer-link" href="privacy-policy.html">Privacy Policy</a>
+            |
+            <a class="footer-link" href="terms-and-conditions.html"
+              >Terms & Conditions</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="../index.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
+    <script>
+      const BackendTechs = [
+        // Languages
+        {
+          name: "Node.js",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+          desc: "A JavaScript runtime built on Chrome's V8 engine, ideal for scalable server-side applications.",
+        },
+        {
+          name: "Python",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          desc: "A versatile language popular for backend development, scripting, and automation.",
+        },
+        {
+          name: "Java",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          desc: "A class-based, object-oriented language widely used for building robust backend systems.",
+        },
+        {
+          name: "PHP",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+          desc: "A popular server-side scripting language for web development.",
+        },
+
+        // Frameworks
+        {
+          name: "Express.js",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+          desc: "A minimal and flexible Node.js web application framework for APIs and web servers.",
+        },
+        {
+          name: "Django",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+          desc: "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+        },
+        {
+          name: "Spring Boot",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg",
+          desc: "A framework for building Java-based enterprise applications with minimal setup.",
+        },
+        {
+          name: "Laravel",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg",
+          desc: "A PHP framework known for its elegant syntax and powerful features like routing and authentication.",
+        },
+
+        // Databases
+        {
+          name: "MongoDB",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+          desc: "A NoSQL database that stores data in JSON-like documents with flexible schemas.",
+        },
+        {
+          name: "MySQL",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          desc: "An open-source relational database management system widely used in web applications.",
+        },
+        {
+          name: "PostgreSQL",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          desc: "A powerful, open-source object-relational database system with a strong focus on extensibility.",
+        },
+        {
+          name: "Redis",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+          desc: "An in-memory data structure store used as a database, cache, and message broker.",
+        },
+
+        // Other Tools
+        {
+          name: "Docker",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+          desc: "A platform for developing, shipping, and running applications in isolated containers.",
+        },
+        {
+          name: "GraphQL",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+          desc: "A query language for APIs that enables clients to request exactly the data they need.",
+        },
+        {
+          name: "REST API",
+          logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swagger/swagger-original.svg",
+          desc: "A widely used architectural style for designing networked applications and services.",
+        },
+      ];
+
+      const grid = document.getElementById("backend-tech-grid");
+
+      BackendTechs.forEach((tech) => {
+        console.log(tech);
+        const card = document.createElement("div");
+        card.className = "tech-card ";
+        card.innerHTML = `
+    <img src="${tech.logo}" alt="${tech.name}" title="${tech.name}" />
+    <div class="tech-card-title">${tech.name}</div>
+    <div class="tech-card-desc">${tech.desc}</div>
+  `;
+        grid.appendChild(card); // ✅ append the actual card
+      });
+    </script>
+  </body>
+</html>

@@ -779,7 +779,7 @@ footer {
 
 .technologies {
   padding: 100px 0;
-  background: #f8fafc;
+  background: #fff;
 }
 
 .technologie-details {
@@ -796,8 +796,8 @@ footer {
 }
 
 .tech-category {
-  background: white;
-  padding: 2.5rem;
+  background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);;
+  /* padding: 2.5rem; */
   border-radius: 16px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   border: 1px solid #e2e8f0;
@@ -839,8 +839,8 @@ footer {
   height: 28px;
   object-fit: contain;
   border-radius: 6px;
-  background: #fff;
-  box-shadow: 0 1px 4px rgba(30, 41, 59, 0.07);
+  /* background: #fff; */
+  /* box-shadow: 0 1px 4px rgba(30, 41, 59, 0.07); */
   padding: 2px;
 }
 

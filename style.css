@@ -770,8 +770,7 @@ footer {
 
 .footer-link {
   color: #cbd5e1;
-  text-decoration: underline;
-  text-underline-offset: 2px;
+  text-decoration: none;
 }
 
 .policy-bullet {

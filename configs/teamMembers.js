@@ -18,7 +18,7 @@ export const teamMembers = [
     title: "Lead Backend Developer",
     image: "./assets/profile/Manoj-Profile.jpg",
     description:
-      "Backend developer specialized in Magento and scalable API systems with 4+ years of experience.",
+      "Backend developer specialized in Magento and scalable API systems with 3+ years of experience.",
   },
   {
     name: "Akshata Jadhav",

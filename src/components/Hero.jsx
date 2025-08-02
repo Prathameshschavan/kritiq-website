@@ -1,6 +1,5 @@
 import { ArrowRight, Rocket } from "lucide-react";
-import React from "react";
-
+import HeroImage from "../assets/images/hero-image.png";
 // const stats = [
 //   { number: "200+", label: "Projects Completed" },
 //   { number: "50+", label: "Happy Clients" },
@@ -67,12 +66,16 @@ const Hero = ({ isVisible, scrollToSection }) => {
             }`}
           >
             <div className="bg-contain relative  rounded-3xl flex items-center justify-center text-white text-8xl  transform rotate-3 hover:rotate-6 transition-transform duration-500">
-              <img src="/src/assets/images/hero-image.png" className="w-[100%] object-contain rounded-2xl" alt="hero image" />
+              <img
+                src={HeroImage}
+                className="w-[100%] object-contain rounded-2xl"
+                alt="hero image"
+              />
               <div className="absolute -top-4 -right-4 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full flex items-center justify-center text-3xl animate-bounce">
                 ⚡
               </div>
               <div className="absolute -bottom-4 -left-4 w-20 h-20 bg-gradient-to-r from-green-400 to-blue-500 rounded-full flex items-center justify-center text-2xl animate-bounce ">
-                <Rocket/>
+                <Rocket />
               </div>
             </div>
           </div>

@@ -84,7 +84,7 @@ const Contact = ({ isVisible }) => {
             className={`bg-gradient-to-br from-blue-50 to-purple-50 rounded-2xl p-8 border border-gray-200 transform transition-all duration-1000 ${
               isVisible["contact"]
                 ? "translate-x-0 opacity-100"
-                : "translate-x-10 opacity-0"
+                : "translate-x-0 opacity-0"
             }`}
           >
             <form className="space-y-6">

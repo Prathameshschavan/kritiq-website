@@ -1,1 +1,10 @@
 @import "tailwindcss";
+
+@keyframes bouncy {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05); /* Reduced from Tailwind's default -25% */
+  }
+}

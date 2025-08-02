@@ -1,5 +1,5 @@
 import { Menu, X } from "lucide-react";
-import React from "react";
+import Logo from "../assets/images/KQ-01.png"
 
 const Navbar = ({
   activeSection,
@@ -13,7 +13,7 @@ const Navbar = ({
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-3">
             <img
-              src="/src/assets/images/KQ-01.png"
+              src={Logo}
               alt="Kritiq it solutions"
               className="w-10 h-10"
             />

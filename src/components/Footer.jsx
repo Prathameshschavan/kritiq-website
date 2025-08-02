@@ -1,5 +1,5 @@
 import React from "react";
-
+import Logo from "../assets/images/KQ-02.png";
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900 text-white py-16">
@@ -7,11 +7,7 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img
-                src="/src/assets/images/KQ-02.png"
-                alt="Kritiq it solutions"
-                className="w-10 h-10"
-              />
+              <img src={Logo} alt="Kritiq it solutions" className="w-10 h-10" />
               <span className="text-xl font-bold">KritIQ IT Solutions</span>
             </div>
             <p className="text-blue-100 leading-relaxed mb-6">
